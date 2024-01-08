@@ -6,7 +6,7 @@ $stageDir = '$(Build.SourcesDirectory)' | Split-Path
 $githubDir = $stageDir +"\"+"gitHub"
 $destination = $githubDir +"\"+"$(azure-repo-name).git"
 #please provide your username
-$alias = '$(userName):'+ "$(Github.PAT)"
+$alias = '$(bmlops-wiboocria):'+ "$(Github.PAT)"
 #Please make sure, you remove https from azure-repo-clone-url
 $sourceURL = 'https://$(AzureDevOps.PAT)@$(azure-repo-clone-url)'
 #Please make sure, you remove https from github-repo-clone-url
